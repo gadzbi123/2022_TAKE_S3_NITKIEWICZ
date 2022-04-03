@@ -4,14 +4,9 @@
  * @version  1.0
  *
  */
-public class Kurs{
+public class Klient{
     long ID;
-    String godzinaRozpoczecia;
-    String godzinaZakonczenia;
-    float iloscSpalonegoPaliwa;
-    float iloscSkakowanychBiletow;
-
-    public int ObliczSumeOpoznien(){
-        return 0;
-    }
+    String Imie;
+    String Nazwisko;
+    String PESEL;
 }
