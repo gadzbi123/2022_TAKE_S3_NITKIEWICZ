@@ -1,0 +1,10 @@
+jpa
+odpalic projekt taketest
+odpalic sql-tools server i client
+mozna ogladac dane wrzucane do bazy
+
+zadanie: stworzyc dzialajace przekazywanie encji do bazy
+		 pomyslec jak polaczyc encje
+		 dodatkowe URI lub wykorzystanie linkow href=/owner/3
+		 
+		 
