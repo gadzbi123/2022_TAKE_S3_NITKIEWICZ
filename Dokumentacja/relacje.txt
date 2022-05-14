@@ -1,0 +1,3 @@
+Autobus 1 : N Przejazd
+Trasa 1 : N Przejazd
+Przejazd N : M Klient (mapowane po stronie tabeli Klient, pomocnicza tabela Przejazd_Klienta, połączenie po ID obu tabeli)
