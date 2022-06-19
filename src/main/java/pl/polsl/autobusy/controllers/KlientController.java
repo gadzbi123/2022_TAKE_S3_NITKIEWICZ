@@ -1,11 +1,21 @@
 package pl.polsl.autobusy.controllers;
 
 import org.springframework.web.bind.annotation.*;
+import pl.polsl.autobusy.entities.Autobus;
 import pl.polsl.autobusy.entities.Klient;
 import pl.polsl.autobusy.operations.DatabaseOperations;
 
+import java.util.List;
+
 @RestController
 public class KlientController {
+
+    @GetMapping("/klienci")
+    public List<Klient> getAll() {
+        try (DatabaseOperations<Klient> db = new DatabaseOperations<>(Klient.class)) {
+            return db.getAll();
+        }
+    }
 
     @GetMapping("/klienci/{id}")
     public Klient getById(@PathVariable int id) {

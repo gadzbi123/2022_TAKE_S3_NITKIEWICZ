@@ -4,8 +4,17 @@ import org.springframework.web.bind.annotation.*;
 import pl.polsl.autobusy.entities.Autobus;
 import pl.polsl.autobusy.operations.DatabaseOperations;
 
+import java.util.List;
+
 @RestController
 public class AutobusyController {
+
+    @GetMapping("/autobusy")
+    public List<Autobus> getAll() {
+        try (DatabaseOperations<Autobus> db = new DatabaseOperations<>(Autobus.class)) {
+            return db.getAll();
+        }
+    }
 
     @GetMapping("/autobusy/{id}")
     public Autobus getById(@PathVariable int id) {
