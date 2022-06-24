@@ -1,0 +1,4 @@
+Dokumentacja API znajduje się pod następującymi endpointami:
+
+/v2/apidocs - zawiera dokumentację w formie JSON
+/swagger-ui.html - zawiera dokumentację w formie HTML
